@@ -1,5 +1,5 @@
 import pytest
-from http import AsyncClient
+from httpx import AsyncClient
 from app.main import app  # Import your FastAPI app
 
 @pytest.mark.asyncio
