@@ -60,7 +60,7 @@ jobs:
           push: true
           tags: oae26/qr_code_api_broken_code-fastapi:${{ github.sha }} # Uses the Git SHA for tagging
           platforms: linux/amd64,linux/arm64 # Multi-platform support
-          cache-from: type=registry,ref=kaw393939/devops_demo:cache
+          cache-from: type=registry,ref=oae26/devops_demo:cache
           cache-to: type=inline,mode=max
           
       - name: Scan the Docker image
