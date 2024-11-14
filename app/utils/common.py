@@ -2,7 +2,6 @@ import logging.config
 import os
 import base64
 from typing import List
-from dotenv import load_dotenv
 from jose import jwt
 from datetime import datetime, timedelta
 from app.config import ADMIN_PASSWORD, ADMIN_USER, ALGORITHM, SECRET_KEY
@@ -10,7 +9,6 @@ import validators  # Make sure to install this package
 from urllib.parse import urlparse, urlunparse
 
 # Load environment variables from .env file for security and configuration.
-load_dotenv()
 
 def setup_logging():
     """

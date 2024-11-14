@@ -1,11 +1,9 @@
 # Load environment variables
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
 # The dotenv package is used to load environment variables from a .env file
 # into the environment for this script. This is useful for keeping secrets out of source code.
-load_dotenv()
 
 # Environment Variables for Configuration
 
